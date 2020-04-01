@@ -1,0 +1,31 @@
+<?php defined('SYSTEMPATH') || exit('No direct script access allowed'); ?>
+
+CRITICAL - 2020-03-31 12:59:38 --> syntax error, unexpected ')', expecting end of file
+#0 /Applications/MAMP/htdocs/cis/system/View/View.php(501): CodeIgniter\View\View->render('layout/topbar', NULL, NULL)
+#1 /Applications/MAMP/htdocs/cis/app/Views/layout/index.php(10): CodeIgniter\View\View->include('layout/topbar')
+#2 /Applications/MAMP/htdocs/cis/system/View/View.php(235): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/cis/system/View/View.php(246): CodeIgniter\View\View->render('layout/index', Array, NULL)
+#4 /Applications/MAMP/htdocs/cis/system/Common.php(175): CodeIgniter\View\View->render('modules/dashboa...', Array, NULL)
+#5 /Applications/MAMP/htdocs/cis/app/Controllers/Home.php(7): view('modules/dashboa...')
+#6 [internal function]: App\Controllers\Home->index()
+#7 /Applications/MAMP/htdocs/cis/app/Controllers/Core/BaseAdmin.php(43): call_user_func_array(Array, Array)
+#8 /Applications/MAMP/htdocs/cis/system/CodeIgniter.php(840): App\Controllers\Core\BaseAdmin->_remap('index')
+#9 /Applications/MAMP/htdocs/cis/system/CodeIgniter.php(335): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /Applications/MAMP/htdocs/cis/system/CodeIgniter.php(245): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/cis/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-03-31 13:09:02 --> Call to undefined function baseURL()
+#0 /Applications/MAMP/htdocs/cis/system/View/View.php(235): include()
+#1 /Applications/MAMP/htdocs/cis/system/View/View.php(501): CodeIgniter\View\View->render('layout/topbar', NULL, NULL)
+#2 /Applications/MAMP/htdocs/cis/app/Views/layout/index.php(10): CodeIgniter\View\View->include('layout/topbar')
+#3 /Applications/MAMP/htdocs/cis/system/View/View.php(235): include('/Applications/M...')
+#4 /Applications/MAMP/htdocs/cis/system/View/View.php(246): CodeIgniter\View\View->render('layout/index', Array, NULL)
+#5 /Applications/MAMP/htdocs/cis/system/Common.php(175): CodeIgniter\View\View->render('modules/dashboa...', Array, NULL)
+#6 /Applications/MAMP/htdocs/cis/app/Controllers/Home.php(7): view('modules/dashboa...')
+#7 [internal function]: App\Controllers\Home->index()
+#8 /Applications/MAMP/htdocs/cis/app/Controllers/Core/BaseAdmin.php(43): call_user_func_array(Array, Array)
+#9 /Applications/MAMP/htdocs/cis/system/CodeIgniter.php(840): App\Controllers\Core\BaseAdmin->_remap('index')
+#10 /Applications/MAMP/htdocs/cis/system/CodeIgniter.php(335): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 /Applications/MAMP/htdocs/cis/system/CodeIgniter.php(245): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/cis/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
